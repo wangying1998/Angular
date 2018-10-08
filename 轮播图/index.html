@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rollimage</title>
+</head>
+<link rel="stylesheet" href="index.css" />
+<body>
+	<div id="list">
+		<ul id="ul">
+			<li><img src="image/banner_01.jpg"></li>
+			<li><img src="image/banner_02.jpg"></li>
+			<li><img src="image/banner_03.jpg"></li>
+			<li><img src="image/banner_04.jpg"></li>
+			<li><img src="image/banner_05.jpg"></li>
+		</ul>
+	</div>
+	<div id="btn">
+		<span class="on" onclick="showButton(1)"></span>
+		<span onclick="showButton(2)"></span>
+		<span onclick="showButton(3)"></span>
+		<span onclick="showButton(4)"></span>
+		<span onclick="showButton(5)"></span>
+	</div>
+</body>
+</html>
+<script src="index.js"></script>
+<script type="text/javascript">
+	var li = document.getElementsByTagName('li');
+	var i=0;
+	setInterval(function(){
+		animate(li[i],{left:-850});
+	},1000);
+	
+		
+		
+</script>
