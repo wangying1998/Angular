@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="list">
+    <ul>
+      <li><a [routerLink]="[]" class="c">正在学习</a></li>
+      <li><a [routerLink]="[]">我关注的</a></li>
+      <li><a [routerLink]="[]">我看过的</a></li>
+    </ul>
+  </div>
+    <div class="down">
+      <ul>
+        <li *ngFor='let lc of lcourses;'>
+          <a [routerLink]="['']">
+            <img src="{{lc.img}}" alt="">
+            <span class="name">{{lc.name}}</span>
+            <span class="text">{{lc.content}}</span>
+            <span class="len">{{lc.courselen}}</span>
+            <span class="peo">人数{{lc.people}}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="left">
+    <ul>
+      <li *ngFor='let sq of shequ;'>
+        <a [routerLink]="['']">
+          <img src="assets/images/头像.jpeg" alt="" id="touxiang">
+          <img src="{{sq.img}}" alt="">
+          <div class="up">
+            <h4>{{sq.coursename}}</h4>
+            <p>{{sq.content}}</p>
+          </div>
+          <div class="down">
+            <span>{{sq.name}}</span>
+            <span>{{sq.date}}</span>
+            <span>阅读{{sq.reader}}</span>
+            <span>评论{{sq.pinglun}}</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+    <span id="remen">热门话题</span>
+    <ul class="spans">
+      <li><a href=""># 2015级程序设计基 ... #</a><span>6万</span></li>
+      <li><a href=""># 2015级面向对象程 ... #</a><span>3万</span></li>
+      <li><a href=""># cms与模板制作 #</a><span>3万</span></li>
+      <li><a href=""># 数据结构 #</a><span>3万</span></li>
+      <li><a href=""># 数据库原理（5.6. ... #</a><span>2万</span></li>
+      <li><a href=""># 2014级PHP程序 ... #</a><span>2万</span></li>
+      <li><a href=""># Web开发（二）20 ... #</a><span>1万</span></li>
+      <li><a href=""># 数据库系统概论 ... #</a><span>1万</span></li>
+      <li><a href=""># Web开发（二）20 ... #</a><span>1万</span></li>
+      <li><a href=""># web开发（一）20 ... #</a><span>1万</span></li>
+    </ul>
+  </div>
+</div>

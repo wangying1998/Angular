@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="select">
+      <select>
+        <option>课程分类</option>
+        <option><a href="#">计算机导论</a></option>
+        <option><a href="#">数据结构</a></option>
+        <option><a href="#">H5</a></option>
+        <option><a href="#">混合应用开发</a></option>
+      </select>
+    
+      <select>
+        <option>课程体系</option>
+        <option><a href="#">计算机基础技能</a></option>
+        <option><a href="#">web工程师</a></option>
+        <option><a href="#">软件测试工程师</a></option>
+        <option><a href="#">数据库工程师</a></option>
+        <option><a href="#">Java工程师</a></option>
+      </select>
+    </div>
+    <div class="down">
+      <ul>
+        <li *ngFor='let lc of lcourses;'>
+          <a [routerLink]="['']">
+            <img src="{{lc.img}}" alt="">
+            <span class="name">{{lc.name}}</span>
+            <span class="text">{{lc.content}}</span>
+            <span class="len">{{lc.courselen}}</span>
+            <span class="peo">人数{{lc.people}}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>

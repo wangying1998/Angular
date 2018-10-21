@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="up">
+    <p>学霸，学渣，偶想说~</p>
+    <form action="get">
+      <div class="xuankuang">
+        <span><a [routerLink]="['']">加粗</a></span>
+        <span><a [routerLink]="['']">斜体</a></span>
+        <span><a [routerLink]="['']">下划线</a></span>
+        <span><a [routerLink]="['']">编号</a></span>
+        <span><a [routerLink]="['']">项目符号</a></span>
+        <span><a [routerLink]="['']">插入代码</a></span>
+        <span><a [routerLink]="['']">插入表情</a></span>
+        <span><a [routerLink]="['']">图片</a></span>
+        <span><a [routerLink]="['']">链接</a></span>
+        <span><a [routerLink]="['']">删除格式</a></span>
+        <span><a [routerLink]="['']">全屏</a></span>
+      </div>
+      <div class="txt">
+        <textarea id="txt" cols="30" rows="10"></textarea>
+      </div>
+    </form>
+    <div class="footer">
+      <ul class="under">
+        <li><a [routerLink]="['']">话题</a></li>
+        <li><a [routerLink]="['']">发长文</a></li>
+      </ul>
+      <button type="submit" style="background-color:orangered;color:white;width: 45px;height: 25px;">发布</button>
+    </div>
+  </div>
+
+  <div class="down">
+    <div class="list">
+      <ul>
+        <li><a [routerLink]="['']" id="now">动态</a></li>
+        <li><a [routerLink]="['']">我的赞</a></li>
+        <li><a [routerLink]="['']">我的收藏</a></li>
+      </ul>
+    </div>
+    <div class="cs">
+      当前没有动态
+    </div>
+  </div>
+</div>

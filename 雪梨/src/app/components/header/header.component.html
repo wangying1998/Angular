@@ -1,0 +1,35 @@
+<header>
+  <div id="nav">
+    <div id="logo">
+        <a [routerLink]='["/home"]'><img src="assets/images/logo.png"/></a>
+    </div>
+    <div id="list">
+        <ul>
+            <li class="bgc"><a [routerLink]='["/home"]'>首页</a></li>
+            <li class="bgc"><a [routerLink]='["/tongbu"]'>同步课</a></li>
+            <li class="bgc"><a [routerLink]='["/course"]'>课程</a></li>
+            <li class="bgc"><a [routerLink]='["/shequ"]' [queryParams]="{id:800,name:'wy'}">社区</a></li>
+            <li>
+              <input type="search" id="search" placeholder="搜索课程、问答">
+              <button>搜索</button>
+            </li>
+            <li class="bgc">
+              <span><a id="bell">通知</a></span>
+              <ul class="downbell">
+                <li>@我的</li>
+                <li>收到的赞</li>
+                <li>评论</li>
+              </ul>
+            </li>
+            <li class="bgc">
+              <span><a id="pic">头像</a></span>
+              <ul class="downpic">
+                <li>个人主页</li>
+                <li>设置</li>
+                <li>退出</li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+  </div>
+</header>

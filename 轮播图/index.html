@@ -27,11 +27,21 @@
 <script src="index.js"></script>
 <script type="text/javascript">
 	var li = document.getElementsByTagName('li');
-	var i=0;
+//	var i=0;
+//	setInterval(function(){
+//		animate(li[i],{left:-850});
+//	},1000);
+
+	var k=0;
 	setInterval(function(){
-		animate(li[i],{left:-850});
+		if(k>5){
+			k = 0;
+		}
+		k = (k+1)%6;
+		showButton(k);
+		console.log(k);
+		
+		
+//		animate(li[0],{left:-850});
 	},1000);
-	
-		
-		
 </script>

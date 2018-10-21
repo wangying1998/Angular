@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="up">
+        <ul>
+            <li><a>我加入的</a></li>
+        </ul>
+    </div>
+    <div class="down">
+        <ul>
+            <li *ngFor='let course of courses;'>
+                <a [routerLink]="['./',course.id]">
+                    <div class="img">
+                        <img src="{{course.images}}" alt="">
+                    </div>
+                    <div class="txt">
+                        <h4>{{course.courseName}}</h4><br><br>
+                        <span>任务{{course.task}}</span>
+                        <span class="span">人数{{course.person}}</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

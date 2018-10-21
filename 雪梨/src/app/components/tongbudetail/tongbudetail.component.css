@@ -1,0 +1,79 @@
+.container{
+    /* border: #ccc 1px solid; */
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+}
+.detail{
+    float: left;
+    width: 100%;
+}
+.p{
+    margin-top: 30px;
+    font-size: 20px;
+    float: left;
+}
+.jiaru{
+    font-size: 12px;
+    display: block;
+    float: left;
+    margin-top: 35px;
+    margin-left: 30px;
+    width: 50px;
+    height: 18px;
+    text-align: center;
+    background-color: rgb(24, 209, 24);
+}
+.list{
+    border-bottom: #ccc 1px solid;
+    margin-top: 50px;
+    font-size: 18px;
+    float: left;
+    width: 100%;
+}
+.list li{
+    margin-left: 30px;
+    float: left;
+    height: 30px;
+}
+.c{
+    color: red;
+}
+#inp1{
+    margin-left: 40%;
+}
+.txt{
+    float: left;
+    /* margin: 10px 0 0 60px; */
+    width: 75%;
+    height: 300px;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.list2 li{
+    border-bottom: #ccc 1px solid;
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    padding: 10px;
+}
+.list2 span{
+    display: block;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #aaa;
+    font-size: 14px;
+}
+.p2{
+    font-size: 20px;
+}
+
+
+/* 
+.active{
+    color: red;
+} */
