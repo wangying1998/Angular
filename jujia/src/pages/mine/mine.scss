@@ -1,0 +1,57 @@
+page-mine {
+    ion-navbar{
+        height: 200px;
+        background-image: url("../assets/imgs/mine_bg.png");
+        .bar{
+            width: 100%;
+            text-align: center;
+        }
+        .pic{
+            border-radius: 50%;
+            margin-left: 37%;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    ion-content{
+        .dingdan{
+            width: 100%;
+            padding: 10px;
+            line-height: 40px;
+        }
+        span{
+            color: #aaa;
+            float: right;
+        }
+        .msg{
+            width: 100%;
+            float: left;
+        }
+        .first{
+            float: left;
+            width: 33.3%;
+            text-align: center;
+        }
+        .first img{
+            width: 30%;
+        }
+        .down img{
+            width: 20%;
+        }
+        .first:hover{
+            background-color: rgba(255, 208, 0, 0.925),
+        }
+        .down{
+            width: 50%;
+            float: left;
+            text-align: center;
+        }
+        .down:hover{
+            background-color: rgba(255, 208, 0, 0.925),
+        }
+    }
+}

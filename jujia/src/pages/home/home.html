@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-navbar color="yellow">
+    <ion-title><img src="assets/imgs/标题.png"></ion-title>
+    <ion-buttons>
+      <button ion-button icon-only>
+        <ion-icon name="ios-search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding> 
+  <ul class="list">
+    <li (click)="ch1()">推荐</li>
+    <li (click)="ch2()">家居</li>
+    <li (click)="ch3()">餐厨</li>
+    <li (click)="ch4()">床上用品</li>
+  </ul>
+
+  <div [ngSwitch]="icon">
+    <div *ngSwitchCase="">
+      <!-- 插值表示式 -->
+      <h1>{{title}}</h1>
+      <!-- 属性绑定 -->
+      <h3 [innerHTML]="txt"></h3>
+      <!-- 事件绑定 -->
+      <button (keydown)="fun($event)">点击</button>
+      <!-- 双向数据绑定 -->
+      <input type="text" [(ngModel)] = "txt">
+      <!-- 指令 -->
+      <ul>
+          <li *ngFor="let item of arr;let i = index;">
+              <input type="checkbox"> 这是第{{item}}个，下标是{{i}}
+              <button (click)="del(i)">删除</button>
+          </li>
+      </ul>
+    </div>
+    <div *ngSwitchCase="'tuijian'">
+      <ion-slides pager="true" autoplay="1000" loop="true">
+        <ion-slide>
+          <img src="assets/imgs/轮播.png" alt="pic1" class="lb">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/轮播.png" alt="pic1" class="lb">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/轮播.png" alt="pic1" class="lb">
+        </ion-slide>
+      </ion-slides>
+      <div>
+        <p>热|门|推|荐</p>
+        <p>RECOMMENDATION</p>
+      </div>
+      <div>
+        <div class="pro">
+          <div class="product">
+            <a href="#"><img src="assets/imgs/01_03.png"></a>
+          </div>
+          <div class="product">
+            <a href="#"><img src="assets/imgs/01_05.png"></a>
+          </div>
+        </div>
+        <div class="pro">
+          <div class="product">
+            <a href="#"><img src="assets/imgs/01_09.png"></a>
+          </div>
+          <div class="product">
+            <a href="#"><img src="assets/imgs/01_10.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'jiaju'">
+      <ion-slides pager="true" autoplay="1000" loop="true">
+        <ion-slide>
+          <img src="assets/imgs/images/家居页_02.png" alt="pic1" class="lb">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/images/家居页_02.png" alt="pic1" class="lb">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/images/家居页_02.png" alt="pic1" class="lb">
+        </ion-slide>
+      </ion-slides>
+      <div>
+        <div class="jj">
+          <a href="#"><img src="assets/imgs/images/家居页_05.png"></a>
+        </div>
+        <div class="jj">
+          <a href="#"><img src="assets/imgs/images/家居页_07.png"></a>
+        </div>
+        <div class="jj">
+          <a href="#"><img src="assets/imgs/images/家居页_09.png"></a>
+        </div>
+      </div>
+      <div>
+        <p>桔|子|家|居</p>
+        <p>Orange household</p>
+      </div>
+      <div class="pro">
+        <div class="product">
+          <a href="#"><img src="assets/imgs/images/家居页_14.png"></a>
+        </div>
+        <div class="product">
+          <a href="#"><img src="assets/imgs/images/家居页_10.png"></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</ion-content>

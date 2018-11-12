@@ -1,0 +1,63 @@
+page-home {
+    ion-navbar{
+        img{
+            width: 50px;
+            height: 30px;
+        }
+        ion-buttons{
+            float: right;
+        }
+    }
+    ion-content{
+        .list{
+            padding: 0;
+            margin: 0;
+        }
+        .list li{
+            list-style-type: none;
+            width: 25%;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+            line-height: 40px;
+        }
+        .list li:hover{
+            border-bottom: rgba(255, 208, 0, 0.925) 1px solid;
+        }
+        .lb{
+            width: 100%;
+            height: auto;
+        }
+        p{
+            width: 100%;
+            color: gray;
+            font-size: 1.3em;
+            text-align: center;
+            letter-spacing: 6px;
+            float: left;
+        }
+        .pro{
+            width: 100%;
+            float: left;
+        }
+        .product img{
+            width: 100%;
+            height: auto;
+        }
+        .product{
+            width: 46%;
+            margin: 2%;
+            float: left;
+        }
+        .jj{
+            width: 31%;
+            margin: 1%;
+            float: left;
+            text-align: center;
+        }
+    }
+    ion-slides{
+        float: left;
+        height: 200px;
+    }
+}
