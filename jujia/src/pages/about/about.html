@@ -1,11 +1,58 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      商城
-    </ion-title>
+    <ion-input type="search" placeholder="                              双12特惠好物超低价"></ion-input>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+    <div>
+      <img src="assets/imgs/商城_01.png" alt="">
+    </div>
+    <ul class="list">
+      <li (click)="isClick(0)" [class.default]="flag==0">客厅</li>
+      <li (click)="isClick(1)" [class.default]="flag==1">卧室</li>
+      <li (click)="isClick(2)" [class.default]="flag==2">餐厅</li>
+      <li (click)="isClick(3)" [class.default]="flag==3">书房</li>
+      <li (click)="isClick(4)" [class.default]="flag==4">门厅</li>
+    </ul>
+    <div [ngSwitch]="flag">
+      <div *ngSwitchCase="0">
+        <p>
+          ———— 沙发 ————
+          <ion-icon name="ios-funnel-outline"></ion-icon>
+        </p>
+        <div>
+          <div class="out">
+            <div class="pic">
+              <img src="assets/imgs/images/商城_03.png">
+            </div>
+            <div class="pic">
+              <img src="assets/imgs/images/商城_05.png">
+            </div>
+          </div>
+          <div class="out">
+            <div class="pic">
+              <img src="assets/imgs/images/商城_07.png">
+            </div>
+            <div class="pic">
+              <img src="assets/imgs/images/商城_09.png">
+            </div>
+          </div>
+        </div>
+        <p class="look">查看全部商品>></p>
+      </div>
+      <div *ngSwitchCase="1">
+      
+      </div>
+      <div *ngSwitchCase="2">
+    
+      </div>
+      <div *ngSwitchCase="3">
+      
+      </div>
+      <div *ngSwitchCase="4">
+      
+      </div>
+    </div>
 
 </ion-content>

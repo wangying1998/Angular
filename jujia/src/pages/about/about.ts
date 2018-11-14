@@ -10,5 +10,8 @@ export class AboutPage {
   constructor(public navCtrl: NavController) {
 
   }
-
+  flag = 0;
+  isClick(i){
+    this.flag = i;
+  }
 }

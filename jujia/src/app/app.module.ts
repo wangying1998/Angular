@@ -13,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MinePage } from '../pages/mine/mine';
 import { AddPage } from '../pages/add/add';
+import { ModalPage } from '../pages/modal/modal';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddPage } from '../pages/add/add';
     HomePage,
     TabsPage,
     MinePage,
-    AddPage
+    AddPage,
+    ModalPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { AddPage } from '../pages/add/add';
     HomePage,
     TabsPage,
     MinePage,
-    AddPage
+    AddPage,
+    ModalPage
   ],
   providers: [
     StatusBar,

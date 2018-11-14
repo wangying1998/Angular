@@ -1,0 +1,40 @@
+page-modal {
+    ion-content{
+        background-color: rgba(255, 208, 0, 0.925)!important;
+        .up{
+            height: 100px;
+        }
+        .out{
+            width: 100%;
+            text-align: center;
+        }
+        .block{
+            width: 50%;
+            float: left;
+            // border: red 1px solid
+        }
+        .pic{
+            margin-left: 22%;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            padding-top: 7%;
+        }
+        .pic img{
+            width: 45px;
+            height: 45px;
+        }
+        .pic:hover{
+            background-color: #aaa;
+        }
+        p{
+            font-size: 14px;
+            color: grey;
+        }
+        .txt{
+            font-size: 18px;
+            color: #000;
+        }
+    }
+}
